@@ -1,18 +1,19 @@
-.table {
+.tableStyles {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: green;
   height: 500px;
-  width: 80%;
+  width: 800px;
   border-radius: 50%;
   margin: 0 auto;
   border: 1em solid black;
+  max-width: 100%;
 }
 
 .board {
-  position: relative;
+  position: absolute;
   top: 40%;
   left: 30%;
 }

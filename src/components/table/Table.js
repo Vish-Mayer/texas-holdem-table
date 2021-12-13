@@ -1,43 +1,23 @@
 import "./Table.css";
-import { Card } from "../Card";
+import { Card } from "../card/Card";
 export const Table = () => {
   return (
-    <div class="table">
-      <div class="board">
-        <div class="card-small">
-          <Card
-            face={"A"}
-            suit={<div>&clubs;</div>}
-            suitColor={"card-img black"}
-          />
+    <div className="tableStyles">
+      <div className="board">
+        <div className="card-small">
+          <Card face={"A"} suit={"C"} />
         </div>
-        <div class="card-small">
-          <Card
-            face={"K"}
-            suit={<div>&diams;</div>}
-            suitColor={"card-img red"}
-          />
+        <div className="card-small">
+          <Card face={"K"} suit={"D"} />
         </div>
-        <div class="card-small">
-          <Card
-            face={"A"}
-            suit={<div>&spades;</div>}
-            suitColor={"card-img black"}
-          />
+        <div className="card-small">
+          <Card face={"A"} suit={"S"} />
         </div>
-        <div class="card-small">
-          <Card
-            face={"A"}
-            suit={<div>&diams;</div>}
-            suitColor={"card-img red"}
-          />
+        <div className="card-small">
+          <Card face={"A"} suit={"D"} />
         </div>
-        <div class="card-small">
-          <Card
-            face={"A"}
-            suit={<div>&hearts;</div>}
-            suitColor={"card-img red"}
-          />
+        <div className="card-small">
+          <Card face={"A"} suit={"H"} />
         </div>
       </div>
     </div>
