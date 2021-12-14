@@ -3,6 +3,7 @@ import { Card } from "../card/Card";
 import { Button } from "../button/Button";
 import { useDealHand } from "../../hooks/useDealHand";
 import { useTransition } from "react-spring";
+import { Player } from "../player/Player";
 
 export const Table = () => {
   const { dealNewHand, result, isLoading } = useDealHand();
@@ -10,7 +11,38 @@ export const Table = () => {
   return (
     <body>
       <div className="outerTable">
-        <div class="number number1">1</div>
+        <div className="seat seat1">
+          <Player />
+        </div>
+
+        <div className="seat seat2">
+          <Player />
+        </div>
+
+        <div className="seat seat3">
+          <Player />
+        </div>
+
+        <div className="seat seat4">
+          <Player />
+        </div>
+
+        <div className="seat seat5">
+          <Player />
+        </div>
+
+        <div className="seat seat6">
+          <Player />
+        </div>
+
+        <div className="seat seat7">
+          <Player />
+        </div>
+
+        <div className="seat seat8">
+          <Player />
+        </div>
+
         <div className="innerTable">
           <div className="board">
             {isLoading ? (

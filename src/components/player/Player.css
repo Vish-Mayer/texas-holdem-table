@@ -1,0 +1,16 @@
+.playerIcon {
+  line-height: 0; /* remove line-height */
+  display: inline-block; /* circle wraps image */
+  border-radius: 50%; /* relative value */
+
+  transition: linear 0.25s;
+  z-index: 1;
+}
+
+.red {
+  color: red;
+}
+
+.black {
+  color: black;
+}

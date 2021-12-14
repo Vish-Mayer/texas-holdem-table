@@ -9,20 +9,53 @@ body {
 
 .outerTable {
   border-radius: 50%;
-  background-color: rgba(226, 53, 53, 0.726);
+  background-color: white;
   height: 600px;
   width: 900px;
   position: relative;
 }
 
-.outerTable .number {
-  --rotation: 0;
+.seat {
+  z-index: 1;
+  left: 43%;
   position: absolute;
   width: 100%;
-  height: 100%;
   text-align: center;
-  transform: rotate(var(--rotation));
-  font-size: 2.5rem;
+}
+
+.seat.seat2 {
+  top: 60px;
+  left: 680px;
+}
+
+.seat.seat3 {
+  top: 257px;
+  left: 785px;
+}
+
+.seat.seat4 {
+  top: 470px;
+  left: 680px;
+}
+
+.seat.seat5 {
+  top: 525px;
+  left: 387px;
+}
+
+.seat.seat6 {
+  top: 470px;
+  left: 110px;
+}
+
+.seat.seat7 {
+  top: 260px;
+  left: 0px;
+}
+
+.seat.seat8 {
+  top: 60px;
+  left: 110px;
 }
 
 .innerTable {
@@ -46,19 +79,10 @@ body {
   top: 40%;
   left: 30%;
 }
-.cardStyle-small {
-  border: 0.2em solid black;
-  border-radius: 10%;
-  height: 80px;
-  width: 56px; /*70% of height*/
-  margin-right: 5px;
-  float: left;
-  background-color: white;
-}
 
 .dealer-btn {
   position: fixed;
-  left: 41%;
+  left: 45%;
   bottom: 5%;
   top: 60%;
   z-index: 1;
