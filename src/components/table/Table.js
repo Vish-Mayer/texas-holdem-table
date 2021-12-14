@@ -11,35 +11,35 @@ export const Table = () => {
   return (
     <body>
       <div className="outerTable">
-        <div className="seat seat1">
+        <div className="seat">
           <Player />
         </div>
 
-        <div className="seat seat2">
+        <div className="seat Player2">
           <Player />
         </div>
 
-        <div className="seat seat3">
+        <div className="seat Player3">
           <Player />
         </div>
 
-        <div className="seat seat4">
+        <div className="seat Player4">
           <Player />
         </div>
 
-        <div className="seat seat5">
+        <div className="seat Player5">
           <Player />
         </div>
 
-        <div className="seat seat6">
+        <div className="seat Player6">
           <Player />
         </div>
 
-        <div className="seat seat7">
+        <div className="seat Player7">
           <Player />
         </div>
 
-        <div className="seat seat8">
+        <div className="seat Player8">
           <Player />
         </div>
 

@@ -23,37 +23,37 @@ body {
   text-align: center;
 }
 
-.seat.seat2 {
+.seat.Player2 {
   top: 60px;
   left: 680px;
 }
 
-.seat.seat3 {
+.seat.Player3 {
   top: 257px;
   left: 785px;
 }
 
-.seat.seat4 {
+.seat.Player4 {
   top: 470px;
   left: 680px;
 }
 
-.seat.seat5 {
+.seat.Player5 {
   top: 525px;
   left: 387px;
 }
 
-.seat.seat6 {
+.seat.Player6 {
   top: 470px;
   left: 110px;
 }
 
-.seat.seat7 {
+.seat.Player7 {
   top: 260px;
   left: 0px;
 }
 
-.seat.seat8 {
+.seat.Player8 {
   top: 60px;
   left: 110px;
 }
@@ -91,5 +91,5 @@ body {
 .loading {
   position: fixed;
   left: 45%;
-  top: 20%;
+  top: 30%;
 }
