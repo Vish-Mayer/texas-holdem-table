@@ -1,16 +1,44 @@
-.tableStyles {
+body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.outerTable {
+  border-radius: 50%;
+  background-color: rgba(226, 53, 53, 0.726);
+  height: 600px;
+  width: 900px;
+  position: relative;
+}
+
+.outerTable .number {
+  --rotation: 0;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+  font-size: 2.5rem;
+}
+
+.innerTable {
+  position: absolute;
   background-color: rgb(38, 134, 38);
+  border-radius: 50%;
   height: 500px;
   width: 800px;
-  border-radius: 50%;
-  margin: 0 auto;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   border: 0.5em solid rgba(31, 112, 31, 0.541);
   outline: 1em solid rgba(39, 30, 22, 0.829);
-  max-width: 100%;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0px 0px -400px;
 }
 
 .board {
@@ -28,15 +56,16 @@
   background-color: white;
 }
 
-.dealer-button {
+.dealer-btn {
   position: fixed;
   left: 41%;
   bottom: 5%;
   top: 60%;
+  z-index: 1;
 }
 
 .loading {
   position: fixed;
-  left: 43%;
+  left: 45%;
   top: 20%;
 }
