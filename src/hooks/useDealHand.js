@@ -5,7 +5,7 @@ export const useDealHand = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState("");
   const url =
-    "https://texas-holdem-hand-generator.herokuapp.com/api/deal-texas-holdem?players=9";
+    "https://texas-holdem-hand-generator.herokuapp.com/api/deal-texas-holdem?players=8";
 
   const dealNewHand = async () => {
     setIsLoading(true);

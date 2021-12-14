@@ -16,7 +16,7 @@ describe("useCharacter", () => {
     await act(async () => renderHook(() => useDealHand()));
 
     expect(global.fetch).toBeCalledWith(
-      "https://texas-holdem-hand-generator.herokuapp.com/api/deal-texas-holdem?players=9"
+      "https://texas-holdem-hand-generator.herokuapp.com/api/deal-texas-holdem?players=8"
     );
   });
 
