@@ -3,12 +3,13 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: green;
+  background-color: rgb(38, 134, 38);
   height: 500px;
   width: 800px;
   border-radius: 50%;
   margin: 0 auto;
-  border: 1em solid black;
+  border: 0.5em solid rgba(31, 112, 31, 0.541);
+  outline: 1em solid rgba(39, 30, 22, 0.829);
   max-width: 100%;
 }
 
@@ -17,7 +18,7 @@
   top: 40%;
   left: 30%;
 }
-.card-small {
+.cardStyle-small {
   border: 0.2em solid black;
   border-radius: 10%;
   height: 80px;
@@ -27,25 +28,15 @@
   background-color: white;
 }
 
-.card-text {
-  margin: 0;
-  margin-top: 15%;
-  text-align: center;
-  font-size: 1.5em;
-  font-weight: bold;
-  padding: 0;
+.dealer-button {
+  position: fixed;
+  left: 41%;
+  bottom: 5%;
+  top: 60%;
 }
 
-.card-img {
-  text-align: center;
-  margin: 0;
-  font-size: 2em;
-}
-
-.red {
-  color: red;
-}
-
-.black {
-  color: black;
+.loading {
+  position: fixed;
+  left: 43%;
+  top: 20%;
 }

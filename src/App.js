@@ -4,8 +4,8 @@ import { Table } from "./components/table/Table";
 
 export const App = () => {
   return (
-    <div class="App">
-      <div class="Table">
+    <div className="App">
+      <div className="Table">
         <Table />
       </div>
     </div>
