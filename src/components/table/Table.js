@@ -21,6 +21,7 @@ export const Table = () => {
                   key={idx}
                 >
                   <Player
+                    name={player.name}
                     card1={
                       <Card
                         face={player.holeCards[0][0]}

@@ -1,16 +1,20 @@
-.playerIcon {
-  line-height: 0; /* remove line-height */
-  display: inline-block; /* circle wraps image */
-  border-radius: 50%; /* relative value */
-
-  transition: linear 0.25s;
+.playerInfo {
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  border-radius: 50%;
+  height: 100px;
+  width: 200px;
   z-index: 1;
 }
 
-.red {
-  color: red;
-}
-
-.black {
-  color: black;
+.playerName {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  position: absolute;
+  top: 70px;
+  left: 42.5px;
+  padding-right: 2em;
+  padding-left: 2em;
+  border-radius: 10%;
 }
