@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 
-export const useDealHand = () => {
+export const useDealHand = players => {
   const [result, setResult] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState("");
-  const url =
-    "https://texas-holdem-hand-generator.herokuapp.com/api/deal-texas-holdem?players=8";
+  const url = `https://texas-holdem-hand-generator.herokuapp.com/api/deal-texas-holdem?players=${players}`;
 
   const dealNewHand = async () => {
     setIsLoading(true);

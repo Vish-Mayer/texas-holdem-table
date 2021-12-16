@@ -4,8 +4,8 @@ import { Button } from "../button/Button";
 import { useDealHand } from "../../hooks/useDealHand";
 import { Player } from "../player/Player";
 
-export const Table = () => {
-  const { dealNewHand, result, isLoading } = useDealHand();
+export const Table = props => {
+  const { dealNewHand, result, isLoading } = useDealHand(props.players);
 
   const winnerDescription = x => {
     if (x) {
@@ -70,7 +70,6 @@ export const Table = () => {
               <div className="description">
                 <p>{winnerDescription(result)}</p>
               </div>
-              <div></div>
             </div>
           )}
           <div className="dealer-btn">
