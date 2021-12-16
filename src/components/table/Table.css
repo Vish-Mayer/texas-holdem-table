@@ -17,45 +17,46 @@ body {
 
 .seat {
   z-index: 1;
-  left: 40%;
+  left: 60px;
+  bottom: 300px;
   position: absolute;
   width: 100%;
   text-align: center;
 }
 
 .seat.Player2 {
-  top: 75px;
-  left: 650px;
+  bottom: 240px;
+  left: 350px;
 }
 
 .seat.Player3 {
-  top: 257px;
-  left: 765px;
+  bottom: 41px;
+  left: 470px;
 }
 
 .seat.Player4 {
-  top: 440px;
-  left: 650px;
+  top: 200px;
+  left: 350px;
 }
 
 .seat.Player5 {
-  top: 500px;
-  left: 40%;
+  left: 60px;
+  top: 250px;
 }
 
 .seat.Player6 {
-  top: 440px;
-  left: 40px;
+  top: 200px;
+  left: -250px;
 }
 
 .seat.Player7 {
-  top: 260px;
-  left: -75px;
+  bottom: 41px;
+  left: -363px;
 }
 
 .seat.Player8 {
-  top: 75px;
-  left: 40px;
+  bottom: 240px;
+  left: -250px;
 }
 
 .innerTable {
@@ -81,15 +82,27 @@ body {
 }
 
 .dealer-btn {
-  position: fixed;
-  left: 45.5%;
-  bottom: 5%;
-  top: 60%;
+  position: relative;
+  left: 95px;
+
+  top: 20px;
   z-index: 1;
 }
 
 .loading {
+  font-weight: bold;
+}
+
+.description {
+  justify-content: center;
+  color: rgba(206, 206, 206, 0.876);
+  font-size: 12px;
+  text-align: center;
+  padding: 13px;
+  background-color: rgba(1, 10, 0, 0.541);
+  width: 300px;
+  border-radius: 10%;
   position: fixed;
-  left: 47%;
+  left: 571px;
   top: 30%;
 }

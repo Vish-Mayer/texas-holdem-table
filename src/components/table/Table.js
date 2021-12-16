@@ -7,44 +7,30 @@ import { Player } from "../player/Player";
 export const Table = () => {
   const { dealNewHand, result, isLoading } = useDealHand();
 
+  const winnerDescription = x => {
+    if (x) {
+      if (x.splitPot.length > 0) {
+        if (x.splitPot.length > 1) {
+          let winners = "";
+          for (let i in x.splitPot) {
+            winners += `${x.splitPot[i].name}, `;
+          }
+          return `${winners}tie with ${x.splitPot[0].hand.rankDescription} - ${x.splitPot[0].hand.kicker}`;
+        }
+      } else if (x.winner.length > 0) {
+        return `${x.winner[0].name} wins with a ${x.winner[0].hand.rankDescription} - ${x.winner[0].hand.kicker}`;
+      }
+    }
+  };
+
   return (
     <div className="outerTable">
-      {isLoading ? (
-        ""
-      ) : (
-        <div>
-          {result &&
-            result.sortedPlayers.map((player, idx) => {
-              return (
-                <div
-                  className={`seat ${player.name.split(" ").join("")}`}
-                  key={idx}
-                >
-                  <Player
-                    name={player.name}
-                    card1={
-                      <Card
-                        face={player.holeCards[0][0]}
-                        suit={player.holeCards[0][1]}
-                      />
-                    }
-                    card2={
-                      <Card
-                        face={player.holeCards[1][0]}
-                        suit={player.holeCards[1][1]}
-                      />
-                    }
-                  />
-                </div>
-              );
-            })}
-        </div>
-      )}
-
       <div className="innerTable">
         <div className="board">
           {isLoading ? (
-            <h4 className="loading">Dealing Cards...</h4>
+            <div className="description">
+              <p className="loading">Dealing Cards...</p>
+            </div>
           ) : (
             <div>
               {result &&
@@ -55,6 +41,36 @@ export const Table = () => {
                     </div>
                   );
                 })}
+
+              {result &&
+                result.sortedPlayers.map((player, idx) => {
+                  return (
+                    <div
+                      className={`seat ${player.name.split(" ").join("")}`}
+                      key={idx}
+                    >
+                      <Player
+                        name={player.name}
+                        card1={
+                          <Card
+                            face={player.holeCards[0][0]}
+                            suit={player.holeCards[0][1]}
+                          />
+                        }
+                        card2={
+                          <Card
+                            face={player.holeCards[1][0]}
+                            suit={player.holeCards[1][1]}
+                          />
+                        }
+                      />
+                    </div>
+                  );
+                })}
+              <div className="description">
+                <p>{winnerDescription(result)}</p>
+              </div>
+              <div></div>
             </div>
           )}
           <div className="dealer-btn">
