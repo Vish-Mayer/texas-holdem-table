@@ -23,7 +23,7 @@
 }
 
 .cardStyle-small {
-  border: 0.2em solid black;
+  border: 3px solid black;
   border-radius: 10%;
   height: 80px;
   width: 56px; /*70% of height*/
@@ -35,13 +35,14 @@
 }
 
 .cardStyle-holeCards {
-  border: 3px solid black;
+  border: 2px solid black;
   border-radius: 10%;
   height: 70px;
   width: 49px; /*70% of height*/
-  margin-right: -8px;
   float: left;
   font-size: 15px;
   font-weight: bold;
   background-color: white;
+
+  box-shadow: 0px 1px 1px 1px rgba(255, 255, 255, 0.342);
 }

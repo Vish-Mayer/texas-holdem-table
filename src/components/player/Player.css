@@ -3,18 +3,19 @@
   align-content: center;
   display: flex;
   border-radius: 50%;
-  height: 100px;
-  width: 200px;
+  height: 120px;
+  width: 120px;
   z-index: 1;
+  background-color: rgb(49, 49, 49);
+  border: 6px dashed white;
+  box-shadow: 0 0 0 2px rgba(255, 226, 59, 0.678) inset, 0 0 0 3px inset,
+    0 0 10px rgba(236, 232, 196, 0.726);
 }
 
 .playerName {
-  color: rgb(0, 0, 0);
+  color: rgb(223, 223, 223);
   font-weight: bold;
   position: absolute;
   top: 70px;
-  left: 42.5px;
-  padding-right: 2em;
-  padding-left: 2em;
   border-radius: 10%;
 }

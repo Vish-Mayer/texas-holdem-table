@@ -15,50 +15,6 @@ body {
   position: relative;
 }
 
-.seat {
-  z-index: 1;
-  left: 60px;
-  bottom: 300px;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-}
-
-.seat.Player2 {
-  bottom: 240px;
-  left: 350px;
-}
-
-.seat.Player3 {
-  bottom: 41px;
-  left: 470px;
-}
-
-.seat.Player4 {
-  top: 200px;
-  left: 350px;
-}
-
-.seat.Player5 {
-  left: 60px;
-  top: 250px;
-}
-
-.seat.Player6 {
-  top: 200px;
-  left: -250px;
-}
-
-.seat.Player7 {
-  bottom: 41px;
-  left: -363px;
-}
-
-.seat.Player8 {
-  bottom: 240px;
-  left: -250px;
-}
-
 .innerTable {
   position: absolute;
   background-color: rgb(38, 134, 38);
@@ -70,9 +26,54 @@ body {
   -webkit-box-sizing: border-box;
   border: 0.5em solid rgba(31, 112, 31, 0.541);
   outline: 1em solid rgba(39, 30, 22, 0.829);
+
   top: 50%;
   left: 50%;
   margin: -250px 0px 0px -400px;
+}
+
+.seat {
+  z-index: 1;
+  left: 100px;
+  bottom: 300px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.seat.Player2 {
+  bottom: 240px;
+  left: 395px;
+}
+
+.seat.Player3 {
+  bottom: 41px;
+  left: 500px;
+}
+
+.seat.Player4 {
+  top: 200px;
+  left: 395px;
+}
+
+.seat.Player5 {
+  left: 100px;
+  top: 250px;
+}
+
+.seat.Player6 {
+  top: 200px;
+  left: -200px;
+}
+
+.seat.Player7 {
+  bottom: 41px;
+  left: -310px;
+}
+
+.seat.Player8 {
+  bottom: 240px;
+  left: -200px;
 }
 
 .board {
@@ -83,7 +84,7 @@ body {
 
 .dealer-btn {
   position: relative;
-  left: 95px;
+  left: 90px;
 
   top: 20px;
   z-index: 1;
@@ -102,7 +103,7 @@ body {
   background-color: rgba(1, 10, 0, 0.541);
   width: 300px;
   border-radius: 10%;
-  position: fixed;
-  left: 571px;
-  top: 30%;
+  position: absolute;
+  left: 10px;
+  top: -100px;
 }
