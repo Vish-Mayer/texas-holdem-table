@@ -8,9 +8,9 @@ export const App = () => {
   };
 
   return (
-    <div className="app">
+    <div className="app ">
       <Switch>
-        <Route path="/" exact render={() => getTable()} />
+        <Route path="/" exact render={() => getTable(8)} />
         <Route path="/players=1" exact render={() => getTable(1)} />
         <Route path="/players=2" exact render={() => getTable(2)} />
         <Route path="/players=3" exact render={() => getTable(3)} />

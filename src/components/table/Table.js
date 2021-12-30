@@ -3,6 +3,10 @@ import { Card } from "../card/Card";
 import { Button } from "../button/Button";
 import { useDealHand } from "../../hooks/useDealHand";
 import { Player } from "../player/Player";
+import {
+  formatKickerDescription,
+  formatHandDescription
+} from "../../helpers/formatWinnerDescription";
 
 export const Table = props => {
   const { dealNewHand, result, isLoading } = useDealHand(props.players);
@@ -15,10 +19,20 @@ export const Table = props => {
           for (let i in x.splitPot) {
             winners += `${x.splitPot[i].name}, `;
           }
-          return `${winners}tie with ${x.splitPot[0].hand.rankDescription} - ${x.splitPot[0].hand.kicker}`;
+          return `${winners}tie with ${formatHandDescription(
+            x.splitPot[0].hand.rankDescription
+          )}, ${formatKickerDescription(
+            x.splitPot[0].hand.rankDescription,
+            x.splitPot[0].hand.kicker
+          )}`;
         }
       } else if (x.winner.length > 0) {
-        return `${x.winner[0].name} wins with a ${x.winner[0].hand.rankDescription} - ${x.winner[0].hand.kicker}`;
+        return `${x.winner[0].name} wins with ${formatHandDescription(
+          x.winner[0].hand.rankDescription
+        )}, ${formatKickerDescription(
+          x.winner[0].hand.rankDescription,
+          x.winner[0].hand.kicker
+        )}`;
       }
     }
   };
