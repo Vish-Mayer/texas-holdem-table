@@ -49,7 +49,7 @@ describe("formatKickerDescription", () => {
 
   it("formats the kicker for a full house", () => {
     expect(formatKickerDescription("Full House", "3+3+3+T+T")).toEqual(
-      "Threes over Tens"
+      "Threes full of Tens"
     );
   });
 

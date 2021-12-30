@@ -52,7 +52,7 @@ export const formatKickerDescription = (handDescription, kickers) => {
   if (handDescription === "Four Of A Kind") return `${plural(values[arr[0]])}`;
 
   if (handDescription === "Full House")
-    return `${plural(values[arr[0]])} over ${plural(values[arr[3]])}`;
+    return `${plural(values[arr[0]])} full of ${plural(values[arr[3]])}`;
 
   if (handDescription === "Flush") return highCard(values[arr[0]]);
 
