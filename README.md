@@ -13,7 +13,7 @@ The home route will populate the table with 8 players.
 
 <img src="./public/Screenshot1.png" width=600 a>
 
-The user change the amount of players that are dealt in a round (up to eight) by placing a query in the route path. For example..
+The user is able to change the amount of players that are dealt in a round (up to eight) by placing a query in the route path. For example..
 
 ```
 http://localhost:3000/players=2
