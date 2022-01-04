@@ -12,7 +12,6 @@ export const useDealHand = players => {
       const response = await fetch(url);
       const data = await response.json();
       setResult(data.results[0]);
-      console.log(data);
     } catch (err) {
       setError(err);
     }

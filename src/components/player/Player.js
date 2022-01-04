@@ -2,7 +2,7 @@ import "./Player.css";
 
 export const Player = props => {
   return (
-    <div className="playerInfo">
+    <div className={`playerInfo ${props.color}`}>
       <div className="player">
         <div className="cardStyle-holeCards">{props.card1}</div>
         <div className="cardStyle-holeCards">{props.card2}</div>

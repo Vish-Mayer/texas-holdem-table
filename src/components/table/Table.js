@@ -64,6 +64,8 @@ export const Table = props => {
                       key={idx}
                     >
                       <Player
+                        something={console.log(idx, player.name)}
+                        color={`${player.name.split(" ").join("")}`}
                         name={player.name}
                         card1={
                           <Card

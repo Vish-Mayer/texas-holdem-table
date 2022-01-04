@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: rgb(39, 39, 39);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,9 +9,9 @@ body {
 
 .outerTable {
   border-radius: 50%;
-  background-color: white;
-  height: 600px;
-  width: 900px;
+  background-color: rgb(211, 119, 77);
+  height: 550px;
+  width: 850px;
   position: relative;
 }
 
@@ -25,11 +25,11 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   border: 0.5em solid rgba(31, 112, 31, 0.541);
-  outline: 1em solid rgba(39, 30, 22, 0.829);
-
+  outline: 1.5em solid rgb(44, 44, 44);
   top: 50%;
   left: 50%;
   margin: -250px 0px 0px -400px;
+  box-shadow: 0 0 100px rgba(236, 232, 196, 0.726);
 }
 
 .seat {
