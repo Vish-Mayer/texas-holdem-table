@@ -9,11 +9,11 @@ const getControlledPromise = () => {
   return { deffered, promise };
 };
 
-describe("useCharacter", () => {
-  it("fetches a character by the url", async () => {
+describe("useDealHand", () => {
+  it("fetches a new request by the url", async () => {
     global.fetch = jest.fn();
 
-    await act(async () => renderHook(() => useDealHand()));
+    await act(async () => renderHook(() => useDealHand(8)));
 
     expect(global.fetch).toBeCalledWith(
       "https://texas-holdem-hand-generator.herokuapp.com/api/deal-texas-holdem?players=8"

@@ -1,12 +1,11 @@
 import "./Table.css";
-import { Card } from "../card/Card";
 import { Button } from "../button/Button";
 import { useDealHand } from "../../hooks/useDealHand";
-import { Player } from "../player/Player";
 import { getWinnerDescription } from "../../helpers/getWinnerDescription";
 import { useState } from "react";
 import { ColorPicker } from "../colorPicker/ColorPicker";
 import { Board } from "../board/Board";
+import { Players } from "../players/Players";
 
 export const Table = props => {
   const { dealNewHand, result, isLoading } = useDealHand(props.players);
@@ -47,32 +46,7 @@ export const Table = props => {
             ) : (
               <div>
                 <Board result={result} />
-                {result &&
-                  result.sortedPlayers.map((player, idx) => {
-                    return (
-                      <div
-                        className={`seat ${player.name.split(" ").join("")}`}
-                        key={idx}
-                      >
-                        <Player
-                          color={`${player.name.split(" ").join("")}`}
-                          name={player.name}
-                          card1={
-                            <Card
-                              face={player.holeCards[0][0]}
-                              suit={player.holeCards[0][1]}
-                            />
-                          }
-                          card2={
-                            <Card
-                              face={player.holeCards[1][0]}
-                              suit={player.holeCards[1][1]}
-                            />
-                          }
-                        />
-                      </div>
-                    );
-                  })}
+                <Players result={result} />
                 <div className="description">
                   <p>{getWinnerDescription(result)}</p>
                 </div>
