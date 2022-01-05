@@ -13,6 +13,10 @@ export const ColorPicker = props => {
       <div className="color-picker-btn">
         <Button onClick={props.button3} color={"red-cloth"} />
       </div>
+
+      <div className="color-picker-btn">
+        <Button onClick={props.button4} color={"yellow-cloth"} />
+      </div>
     </div>
   );
 };

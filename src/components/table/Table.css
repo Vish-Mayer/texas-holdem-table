@@ -40,12 +40,20 @@ body {
   margin: -250px 0px 0px -400px;
 }
 
-.green {
+.green-cloth {
   background-color: rgb(38, 134, 38);
 }
 
-.blue {
+.blue-cloth {
   background-color: rgb(38, 72, 134);
+}
+
+.red-cloth {
+  background-color: rgb(182, 45, 45);
+}
+
+.yellow-cloth {
+  background-color: rgb(199, 173, 29);
 }
 
 .seat {

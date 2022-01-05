@@ -9,20 +9,29 @@ import { ColorPicker } from "../colorPicker/ColorPicker";
 
 export const Table = props => {
   const { dealNewHand, result, isLoading } = useDealHand(props.players);
-  const [tableColor, setTableColor] = useState("green");
+  const [tableColor, setTableColor] = useState("green-cloth");
   const [dealerBtnColor, setdealerBtnColor] = useState("green-btn");
+
+  const setTableStyle = (cloth, btn) => {
+    setTableColor(cloth);
+    setdealerBtnColor(btn);
+  };
 
   return (
     <div className="body">
       <div className="colorPickerStyles">
         <ColorPicker
           button1={() => {
-            setTableColor("green");
-            setdealerBtnColor("green-btn");
+            setTableStyle("green-cloth", "green-btn");
           }}
           button2={() => {
-            setTableColor("blue");
-            setdealerBtnColor("blue-btn");
+            setTableStyle("blue-cloth", "blue-btn");
+          }}
+          button3={() => {
+            setTableStyle("red-cloth", "red-btn");
+          }}
+          button4={() => {
+            setTableStyle("yellow-cloth", "yellow-btn");
           }}
         />
       </div>
