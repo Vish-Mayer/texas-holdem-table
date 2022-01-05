@@ -1,13 +1,21 @@
+.colorPickerStyles {
+  color: #faebd7;
+  padding: 2em;
+}
+
 body {
   background-color: rgb(39, 39, 39);
-  display: flex;
+
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  min-width: 100vh;
   overflow: hidden;
 }
 
 .outerTable {
+  left: 290px;
+  top: 20px;
   border-radius: 50%;
   background-color: rgb(211, 119, 77);
   height: 550px;
@@ -19,7 +27,6 @@ body {
 
 .innerTable {
   position: absolute;
-  background-color: rgb(38, 134, 38);
   border-radius: 50%;
   height: 500px;
   width: 800px;
@@ -31,6 +38,14 @@ body {
   top: 50%;
   left: 50%;
   margin: -250px 0px 0px -400px;
+}
+
+.green {
+  background-color: rgb(38, 134, 38);
+}
+
+.blue {
+  background-color: rgb(38, 72, 134);
 }
 
 .seat {

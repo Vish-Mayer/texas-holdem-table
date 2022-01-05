@@ -1,0 +1,12 @@
+.green-cloth {
+  background-color: rgb(38, 134, 38);
+}
+
+.blue-cloth {
+  background-color: rgb(38, 72, 134);
+}
+
+.color-picker-btn {
+  display: inline;
+  padding: 5px;
+}
