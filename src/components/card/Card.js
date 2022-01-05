@@ -4,6 +4,7 @@ export const Card = props => {
   const formatFace = () => {
     return props.face === "T" ? "10" : props.face;
   };
+
   if (props.suit === "C") {
     return (
       <div>

@@ -12,6 +12,8 @@ API from https://texas-holdem-hand-generator.herokuapp.com/
 The home route will populate the table with 8 players.
 
 <img src="./public/Screenshot1.png" width=600 a>
+<p>
+<img src="./public/Screenshot2.png" width=600 a>
 
 The user is able to change the amount of players that are dealt in a round (up to eight) by placing a query in the route path. For example..
 
@@ -19,7 +21,7 @@ The user is able to change the amount of players that are dealt in a round (up t
 http://localhost:3000/players=2
 ```
 
-<img src="./public/Screenshot2.png" width=600 a>
+<img src="./public/Screenshot3.png" width=600 a>
 
 ### Objectives
 
