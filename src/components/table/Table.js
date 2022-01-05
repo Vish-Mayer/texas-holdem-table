@@ -6,15 +6,16 @@ import { Player } from "../player/Player";
 import { getWinnerDescription } from "../../helpers/getWinnerDescription";
 import { useState } from "react";
 import { ColorPicker } from "../colorPicker/ColorPicker";
+import { Board } from "../board/Board";
 
 export const Table = props => {
   const { dealNewHand, result, isLoading } = useDealHand(props.players);
   const [tableColor, setTableColor] = useState("green-cloth");
-  const [dealerBtnColor, setdealerBtnColor] = useState("green-btn");
+  const [dealerBtnColor, setDealerBtnColor] = useState("green-btn");
 
   const setTableStyle = (cloth, btn) => {
     setTableColor(cloth);
-    setdealerBtnColor(btn);
+    setDealerBtnColor(btn);
   };
 
   return (
@@ -45,15 +46,7 @@ export const Table = props => {
               </div>
             ) : (
               <div>
-                {result &&
-                  result.board.map((card, idx) => {
-                    return (
-                      <div className="cardStyle-small" key={idx}>
-                        <Card face={card[0]} suit={card[1]} />
-                      </div>
-                    );
-                  })}
-
+                <Board result={result} />
                 {result &&
                   result.sortedPlayers.map((player, idx) => {
                     return (
