@@ -1,11 +1,11 @@
 import "./Table.css";
-import { Button } from "../button/Button";
-import { useDealHand } from "../../hooks/useDealHand";
-import { getWinnerDescription } from "../../helpers/getWinnerDescription";
 import { useState } from "react";
 import { ColorPicker } from "../colorPicker/ColorPicker";
 import { Board } from "../board/Board";
 import { Players } from "../players/Players";
+import { Button } from "../button/Button";
+import { useDealHand } from "../../hooks/useDealHand";
+import { getWinnerDescription } from "../../helpers/getWinnerDescription";
 
 export const Table = props => {
   const { dealNewHand, result, isLoading } = useDealHand(props.players);
