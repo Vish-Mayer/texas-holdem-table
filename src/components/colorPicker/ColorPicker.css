@@ -2,7 +2,3 @@
   display: inline;
   padding: 5px;
 }
-
-.active {
-  box-shadow: 0 0 100px rgba(236, 232, 196, 0.726);
-}

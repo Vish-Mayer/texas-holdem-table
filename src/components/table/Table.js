@@ -21,6 +21,7 @@ export const Table = props => {
     <div className="body">
       <div className="colorPickerStyles">
         <ColorPicker
+          tableColor={tableColor}
           button1={() => {
             setTableStyle("green-cloth", "green-btn");
           }}
