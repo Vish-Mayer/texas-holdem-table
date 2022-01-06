@@ -1,20 +1,8 @@
 import { Button } from "../button/Button";
 import "./ColorPicker.css";
 export const ColorPicker = props => {
-  const isGreenActive = () => {
-    return true ? props.tableColor === "green-cloth" : false;
-  };
-
-  const isBlueActive = () => {
-    return true ? props.tableColor === "blue-cloth" : false;
-  };
-
-  const isRedActive = () => {
-    return true ? props.tableColor === "red-cloth" : false;
-  };
-
-  const isYellowActive = () => {
-    return true ? props.tableColor === "yellow-cloth" : false;
+  const isActive = clothColor => {
+    return true ? props.tableColor === clothColor : false;
   };
 
   return (
@@ -23,14 +11,14 @@ export const ColorPicker = props => {
         <Button
           onClick={props.button1}
           color={"green-cloth"}
-          active={isGreenActive()}
+          active={isActive("green-cloth")}
         />
       </div>
       <div className="color-picker-btn">
         <Button
           onClick={props.button2}
           color={"blue-cloth"}
-          active={isBlueActive()}
+          active={isActive("blue-cloth")}
         />
       </div>
 
@@ -38,7 +26,7 @@ export const ColorPicker = props => {
         <Button
           onClick={props.button3}
           color={"red-cloth"}
-          active={isRedActive()}
+          active={isActive("red-cloth")}
         />
       </div>
 
@@ -46,7 +34,15 @@ export const ColorPicker = props => {
         <Button
           onClick={props.button4}
           color={"yellow-cloth"}
-          active={isYellowActive()}
+          active={isActive("yellow-cloth")}
+        />
+      </div>
+
+      <div className="color-picker-btn">
+        <Button
+          onClick={props.button5}
+          color={"black-cloth"}
+          active={isActive("black-cloth")}
         />
       </div>
     </div>

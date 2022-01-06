@@ -32,3 +32,8 @@
   background-color: rgba(245, 214, 42, 0.897);
   color: rgba(53, 44, 13, 0.541);
 }
+
+.black-btn {
+  background-color: rgb(78, 78, 78);
+  color: rgba(255, 255, 255, 0.541);
+}

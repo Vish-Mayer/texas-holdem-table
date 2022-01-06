@@ -56,6 +56,10 @@ body {
   background-color: rgb(199, 173, 29);
 }
 
+.black-cloth {
+  background-color: rgb(66, 66, 66);
+}
+
 .seat {
   z-index: 1;
   left: 100px;

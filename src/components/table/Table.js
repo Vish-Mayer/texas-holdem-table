@@ -34,6 +34,9 @@ export const Table = props => {
           button4={() => {
             setTableStyle("yellow-cloth", "yellow-btn");
           }}
+          button5={() => {
+            setTableStyle("black-cloth", "black-btn");
+          }}
         />
       </div>
 
