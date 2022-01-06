@@ -4,7 +4,7 @@
 
 ### Overview
 
-React application that allows a user to deal an open hand of Texas Hold'em. The table displays all of the players cards, and the outcome of the round.
+React application that allows a user to deal an open hand of Texas Hold'em. The table displays all of the players cards, and the outcome of the round. The table also allows a user to change the colour of the table.
 API from https://texas-holdem-hand-generator.herokuapp.com/
 
 ### Routes
